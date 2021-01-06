@@ -20,7 +20,7 @@ kind: Service
 metadata:
   annotations:
     field.cattle.io/targetWorkloadIds: '["deployment:fleet-single-cluster-demo:demoapp"]'
-  name: demoapp
+  name: demoapp-loadbalancer
   labels:
     app: demoapp
     version: v1
@@ -31,6 +31,3 @@ spec:
     port: 80
     protocol: TCP
     targetPort: 80
-  selector:
-    app: demoapp
-    version: v1
