@@ -20,7 +20,7 @@ kind: Service
 metadata:
   annotations:
     field.cattle.io/targetWorkloadIds: '["deployment:fleet-single-cluster-demo:demoapp"]'
-  name: demoapp-loadbalancer
+  name: demoapp
   labels:
     app: demoapp
     version: v1
