@@ -14,20 +14,3 @@ spec:
     port: 8080
     protocol: TCP
     targetPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  annotations:
-    field.cattle.io/targetWorkloadIds: '["deployment:fleet-single-cluster-demo:demoapp"]'
-  name: demoapp
-  labels:
-    app: demoapp
-    version: v1
-spec:
-  type: ClusterIP
-  ports:
-  - name: http
-    port: 80
-    protocol: TCP
-    targetPort: 80
