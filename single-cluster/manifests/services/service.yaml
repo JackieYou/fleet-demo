@@ -4,11 +4,6 @@ metadata:
   annotations:
     field.cattle.io/targetWorkloadIds: '["deployment:fleet-single-cluster-demo:demoapp"]'
   name: demoapp-loadbalancer
-  ownerReferences:
-  - apiVersion: apps/v1beta2
-    controller: true
-    kind: deployment
-    name: demoapp
   labels:
     app: demoapp
     version: v1
