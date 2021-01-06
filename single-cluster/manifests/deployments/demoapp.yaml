@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demoapp
-        image: demo.harbor.cnrancher.com/rancher/demoapp:v1
+        image: demo.harbor.cnrancher.com/rancher/demoapp:v2
         resources:
           requests:
             cpu: 100m
